@@ -21,7 +21,9 @@
             <!-- End col-->
              <!-- Begin col-->
             <div class="column">
-                <img src="/media/{{menu_item.image_url}}" alt="{{ menu_item.name}}" />
+                {% if menu_item.image_url%}
+                    <img src={{menu_item.image_url.url}} alt="{{ menu_item.name}}" />
+                {% endif %}
             </div>
             <!-- End col-->
         </div>

@@ -4,7 +4,7 @@ class Menu(models.Model):
     name = models.CharField(max_length=200)
     price = models.PositiveIntegerField()
     description = models.TextField(max_length=1000,default="")
-    image_url = models.ImageField(upload_to="img/menu_items",blank=True,null=True)
+    image_url = models.ImageField(upload_to="media/img/menu_items",blank=True,null=True)
 
     class Meta:
         ordering = ['name']
